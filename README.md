@@ -7,7 +7,7 @@ import Unscrollable from 'unscrollable'
 
 const App = () => (
   <Unscrollable>
-    Unscrollable with touches here
+    Scrolling is limited to take effect within the component
   </Unscrollable>
 )
 ```
@@ -21,7 +21,7 @@ import Unscrollable from 'unscrollable/vue'
 
 <template>
   <Unscrollable>
-    Unscrollable with touches here
+    Scrolling is limited to take effect within the component
   </Unscrollable>
 </template>
 ```
