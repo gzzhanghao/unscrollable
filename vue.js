@@ -1,1 +1,1 @@
-export * from './dist/vue';
+export { default } from './dist/vue';
