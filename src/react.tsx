@@ -1,6 +1,6 @@
 import { HTMLAttributes, PropsWithChildren, forwardRef } from 'react';
 
-import styles from './style.css';
+import styles from './style.module.css';
 
 const AbsoluteFixed = forwardRef<
   HTMLDivElement,
