@@ -1,13 +1,13 @@
 {
   "name": "unscrollable",
   "version": "0.1.0",
-  "main": "./react.js",
-  "types": "./react.d.ts",
   "exports": {
     ".": "./react.js",
     "./react": "./react.js",
     "./vue": "./vue.js"
   },
+  "main": "./react.js",
+  "types": "./react.d.ts",
   "files": [
     "dist",
     "react.js",
@@ -21,7 +21,12 @@
     "build:types": "tsc --emitDeclarationOnly",
     "dev": "swc src -d dist -w",
     "lint": "eslint --ext .ts . && tsc --noEmit",
-    "postinstall": "husky install"
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs}": [
+      "eslint"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
@@ -42,10 +47,5 @@
     "react": "^18.2.0",
     "typescript": "^5.1.6",
     "vue": "^3.3.4"
-  },
-  "lint-staged": {
-    "*.{js,ts,cjs}": [
-      "eslint"
-    ]
   }
 }
