@@ -1,3 +1,11 @@
+## 0.2.1 (2023-08-24)
+
+### Bug Fixes
+
+* **entries:** export default ([5a53d8f](https://github.com/gzzhanghao/unscrollable/commit/5a53d8ff46f3514cd0e4a57a43ad672b1f05d4d2))
+* fix container styles ([df6af4c](https://github.com/gzzhanghao/unscrollable/commit/df6af4cbb10ddf5f0b5f98affe34ed139e6dcf76))
+* **style:** copy css files ([2dca555](https://github.com/gzzhanghao/unscrollable/commit/2dca55598c0a3126de6184fe99a227d8e8eeba35))
+
 # 0.2.0 (2023-08-24)
 
 ### Bug Fixes
