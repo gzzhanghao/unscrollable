@@ -1,10 +1,17 @@
-import { FC, ReactNode } from 'react';
+import { HTMLAttributes, PropsWithChildren, forwardRef } from 'react';
 
 import styles from './style.css';
 
-const AbsoluteFixed: FC<{ children: ReactNode }> = ({ children }) => {
+const AbsoluteFixed = forwardRef<
+  HTMLDivElement,
+  PropsWithChildren<HTMLAttributes<HTMLDivElement>>
+>(({ children, className, ...props }, ref) => {
   return (
-    <div className={styles.scrollContainer}>
+    <div
+      ref={ref}
+      {...props}
+      className={`${styles.scrollContainer} ${className || ''}`}
+    >
       <div className={styles.scrollContent}>
         <div className={styles.stickyContainer}>
           <div className={styles.absoluteContainer}>{children}</div>
@@ -12,6 +19,6 @@ const AbsoluteFixed: FC<{ children: ReactNode }> = ({ children }) => {
       </div>
     </div>
   );
-};
+});
 
 export default AbsoluteFixed;
