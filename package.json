@@ -17,9 +17,9 @@
   ],
   "scripts": {
     "build": "concurrently npm:build:*",
-    "build:lib": "swc src -d dist",
+    "build:lib": "swc src -d dist --copy-files",
     "build:types": "tsc --emitDeclarationOnly",
-    "dev": "swc src -d dist -w",
+    "dev": "swc src -d dist --copy-files -w",
     "lint": "eslint --ext .ts . && tsc --noEmit",
     "prepare": "husky install"
   },
