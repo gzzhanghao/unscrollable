@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "./src"
+  ]
+}

@@ -1,0 +1,24 @@
+.scrollContainer {
+  height: 100vh;
+  overflow: auto;
+  overscroll-behavior: none;
+}
+
+.scrollContent {
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.absoluteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
